@@ -1,11 +1,5 @@
-//
-//  MovieCatalogApp.swift
-//  MovieCatalog
-//
-//  Created by Max Kiriukhin on 16.11.2026.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct MovieCatalogApp: App {
@@ -13,5 +7,6 @@ struct MovieCatalogApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Movie.self)
     }
 }
